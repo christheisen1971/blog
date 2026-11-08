@@ -168,3 +168,6 @@ section{scroll-margin-top:70px}
 .topbar .home:hover{background:rgba(0,0,0,.05)}
 .topbar .brand{overflow:hidden;text-overflow:ellipsis}
 @media (max-width:420px){.topbar .brand{font-size:.92em}}
+/* Panoramen (Ararat) */
+.post-body figure.pano{margin-left:calc(-1 * clamp(0px,4vw,60px));margin-right:calc(-1 * clamp(0px,4vw,60px))}
+.post-body figure.pano img{width:100%;height:auto}
