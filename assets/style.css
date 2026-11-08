@@ -156,3 +156,8 @@ section{scroll-margin-top:70px}
 .post-body figure.map img{border:1px solid var(--line);background:#fff}
 .crosslink{margin:36px 0 0;font:600 15px/1.4 var(--sans)}
 .crosslink a{color:var(--accent);text-decoration:none}
+
+/* Einzelfotos immer in Spaltenbreite (auch kleine Bilder von 2009) */
+.post-body figure.single img{width:100%;height:auto;max-height:82vh;object-fit:contain}
+.post-body figure.map img{width:100%}
+.post-hero .orig{color:#e8e4dc}
