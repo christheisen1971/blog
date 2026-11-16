@@ -1,8 +1,14 @@
+@font-face{font-family:'Newsreader';font-style:normal;font-display:swap;font-weight:200 800;src:url(fonts/newsreader-latin-opsz-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:normal;font-display:swap;font-weight:200 800;src:url(fonts/newsreader-latin-ext-opsz-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Newsreader';font-style:italic;font-display:swap;font-weight:200 800;src:url(fonts/newsreader-latin-opsz-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Newsreader';font-style:italic;font-display:swap;font-weight:200 800;src:url(fonts/newsreader-latin-ext-opsz-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Jost';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/jost-latin-wght-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Jost';font-style:normal;font-display:swap;font-weight:100 900;src:url(fonts/jost-latin-ext-wght-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 :root{
   --bg:#f6f3ee; --surface:#fffdf9; --ink:#1c232c; --muted:#5f6772; --line:#e3ddd2;
   --accent:#b8461f; --accent-ink:#fff; --shadow:0 1px 2px rgba(28,35,44,.06),0 8px 24px rgba(28,35,44,.08);
-  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
-  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"Jost",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
   --w:1180px; --read:700px;
 }
 @media (prefers-color-scheme:dark){:root{
@@ -171,3 +177,9 @@ section{scroll-margin-top:70px}
 /* Panoramen (Ararat) */
 .post-body figure.pano{margin-left:calc(-1 * clamp(0px,4vw,60px));margin-right:calc(-1 * clamp(0px,4vw,60px))}
 .post-body figure.pano img{width:100%;height:auto}
+
+/* Schrift F: Newsreader leicht + Jost (16.11.2026) */
+.hero h1,.post-hero h1,.post-head h1,h2,h3,.facts b{font-weight:250!important;letter-spacing:-.02em}
+.lead,.about-body p{font-weight:350}
+.topbar,.btn,.facts span{font-weight:400!important}
+.card h3{font-size:19px;line-height:1.25}
